@@ -1,18 +1,84 @@
-header {
-    background-color: #f7dbbb;
+html{
+    font-size: 1rem;
+    font-family: "Noto Sans Gothic", sans-serif;
 }
+
+body {
+    background-color: #93502A;
+}
+
+header {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    background-color: #f7dbbb;
+    
+}
+
 
 h1{
     color: white;
     background-color: #301e14;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
 }
 
-footer {
-    background-color: #f7dbbb;
+nav ul{
+    display: flex;
+    gap: 10px;
 }
 
 ul {
     list-style: none;
     text-decoration: none;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.grid-inicio {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* 1 parte para el texto, 2 para la imagen */
+  gap: 20px;
+  max-width: 1400px;
+  max-height: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  align-items: center; /* Opcional: centra verticalmente */
+}
+
+.grid-inicio .imagen img {
+  width: 100%;  /* La imagen ocupa todo el ancho de su div */
+  height: auto;
+  display: block;
+}
+
+.grid-novedades {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+footer {
+    background-color: #f7dbbb;
+}
+
+.fa-whatsapp{
+    font-size: 24px;
+    color: black;
+}
+
+.fa-instagram {
+    font-size: 24px;
+    color: black;
+}
+

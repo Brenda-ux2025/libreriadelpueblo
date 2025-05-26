@@ -2,29 +2,51 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gothic&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./CSS/style.css">
     <title>Del Pueblo</title>
 </head>
 <body>
     <header>
-        <h1>Librería Del Pueblo</h1>
-        <nav>
-            <ul>
-                <li><a href="libros.html">Libros</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="H1">
+            <h1>Librería Del Pueblo</h1>
+        </div>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="libros.html">Libros</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>        
     </header>
     <main>
-        <section>
-            <table align="center" border="0" width="80%">
-                <tr>
-                    <td><p>Más de 25 años conectando a nuestros vecinos con autores de todo el mundo.</p></td>
-                    <td><img src="img/imagen principal.jpg" alt="Imagen de una pila de libros y una taza de café"></td>
-                </tr>
-            </table>
+        <section class="grid-inicio">
+            <div class="texto">
+               <p>Más de 25 años conectando a nuestros vecinos con autores de todo el mundo.</p>
+            </div>
+            <div class="imagen">
+                <img src="img/imagen principal.jpg" alt="Imagen de una pila de libros y una taza de café">
+            </div>
+        </section>
+        
+        <section class="novedades">
+        <h2>Novedades del mes</h2>
+        <div class="grid-novedades">
+            <div class="libro">
+            <img class="img1" src="img/img-pantallas_de_la_memoria.jpg" alt="Pantallas de la memoria">
+            </div>
+            <div class="libro">
+            <img class="img2" src="img/img-Historias-raras.jpg" alt="Historias raras">
+            </div>
+            <div class="libro">
+            <img class="img3" src="img/img-atlas_cuerpo_humano.jpg" alt="Atlas del cuerpo humano">
+            </div>
+        </div>
         </section>
     </main>
 </body>
@@ -32,5 +54,11 @@
 <p>
     brendapedrolini
 </p>
+<br>
+<i class="fa-brands fa-whatsapp"></i>
+<i class="fa-brands fa-instagram"></i>
 </footer>
 </html>
+
+<!-- hacer div para poner el menú en el hedear // la caracterìstica flex hace que los elemntos se acomoden en horizontal .img1 {
+    max-width: 30%;
